@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SRI SRI SRI VISHWAKARMA JEWELLERY WORKS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Top Info Bar -->
+<div class="top-bar">
+    <span>Traditional Craftsmanship</span>
+    <span>Custom Jewellery Works</span>
+    <span>Trusted Jewellery Artisans</span>
+</div>
+
+<!-- Header -->
+ 
+<header class="main-header">
+    <div class="header-left">
+        <img src="logo.png" alt="Vishwakarma Jewellery Logo" class="logo">
+        <div class="brand-text">
+            <h1>SRI SRI SRI</h1>
+            <h2>VISHWAKARMA</h2>
+            <p>JEWELLERY WORKS</p>
+        </div>
+    </div>
+
+    <!-- CENTER MENU -->
+    <nav class="header-menu">
+        <a href="men.html">Men</a>
+        <a href="kids.html">Kids</a>
+    </nav>
+
+    <!-- RIGHT CONTACT -->
+    <div class="header-right">
+        <a href="tel:+919160724724" class="contact-btn">Contact Us</a>
+    </div>
+</header>
+         <!-- Hero slide section -->
+<section class="hero hero-slider">
+    <div class="hero-slide active" style="background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('images/hero1.jpg');">
+    </div>
+
+    <div class="hero-slide" style="background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('images/hero2.jpg');">
+    </div>
+
+    <div class="hero-slide" style="background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('images/hero3.jpg');">
+    </div>
+
+    <div class="hero-text">
+        <h2>Elegant Gold Collections</h2>
+        <p>Timeless designs for every occasion</p>
+    </div>
+</section>
+
+<!-- Collections -->
+<section class="collections">
+    <h2>Our Collections</h2>
+    <p>Explore a range of jewellery across categories.</p>
+
+    <div class="collection-grid">
+
+        <a href="chains.html" class="collection-item">
+            <img src="images/chain.jpg" alt="Chains">
+            <h4>Chains</h4>
+        </a>
+
+        <a href="rings.html" class="collection-item">
+            <img src="images/rings.jpg" alt="Rings">
+            <h4>Rings</h4>
+        </a>
+
+        <a href="bangles.html" class="collection-item">
+            <img src="images/bangles.jpg" alt="Bangles">
+            <h4>Bangles</h4>
+        </a>
+
+        <a href="bridal.html" class="collection-item">
+            <img src="images/bridal.jpg" alt="Bridal Jewellery">
+            <h4>Bridal Jewellery</h4>
+        </a>
+
+        <a href="earrings.html" class="collection-item">
+            <img src="images/earrings.jpg" alt="Earrings">
+            <h4>Earrings</h4>
+        </a>
+
+    </div>
+</section>
+<!-- Premium Gallery Section -->
+<section class="premium-gallery">
+    <h2>Signature Creations</h2>
+    <p class="gallery-subtitle">
+        A glimpse of elegance, tradition, and timeless craftsmanship
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="images/gallery/gallery1.jpg" alt="Layered Luxe Jewellery">
+            <div class="gallery-caption">
+                <h3>Layered Luxe</h3>
+                <p>Stack it. Style it. Own it.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/gallery/gallery2.jpg" alt="Ethnic Glow Jewellery">
+            <div class="gallery-caption">
+                <h3>Ethnic Glow</h3>
+                <p>Where tradition meets timeless beauty</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/gallery/gallery3.jpg" alt="Royal Heritage Jewellery">
+            <div class="gallery-caption">
+                <h3>Royal Heritage</h3>
+                <p>Inspired by legacy, crafted with devotion</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Made for Customers -->
+<section class="custom-work">
+    <h2>Made for Our Customers</h2>
+    <p>
+        These jewellery designs are handcrafted for our previous customers.
+        Similar designs can be customized as per your requirement.
+    </p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <h3>SRI SRI SRI VISHWAKARMA JEWELLERY WORKS</h3>
+
+    <p><strong>Owners:</strong> Sri KUPPILI SRINIVASARAO (Koti) & Sri TAMADA PRASADA RAO</p>
+
+    <p>
+        Near Sub-Register Office, Engula Thota, Dasannapeta,  
+        Vizianagaram-535002, Andhra Pradesh, India
+    </p>
+
+    <p>
+        Phone: <a href="tel:+919160724724"
+        >+91 9160724724</a>,
+        <a href="tel:+918106533432"
+        >+91 8106533432</a> |
+        WhatsApp: <a href="https://wa.me/919160724724"
+        >9160724724</a>
+    </p>
+
+    <p>© 2026 Vishwakarma Jewellery Works</p>
+</footer>
+
+<script>
+    const slides = document.querySelectorAll(".hero-slide");
+    let currentSlide = 0;
+
+    setInterval(() => {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active");
+    }, 4000); // 4 seconds
+</script>
+
+<!-- Floating Buttons -->
+<a href="tel:+919160724724" 
+class="float-call">📞</a>
+<a href="https://wa.me/919160724724" 
+class="float-whatsapp">💬</a>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chains Collection | Sri Sri Sri Vishwakarma Jewellery Works</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Jewellery Logo" class="logo">
+    <h1>SRI SRI SRI VISHWAKARMA JEWELLERY WORKS</h1>
+    <p>Traditional & Custom Jewellery Makers</p>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero hero-chains">
+    <div class="hero-text">
+        <h2>Elegant Chains Collection</h2>
+        <p>Graceful designs crafted for every occasion</p>
+        <a href="#chainsGallery" class="hero-btn">Explore Collection</a>
+    </div>
+</section>
+
+<!-- CHAINS COLLECTION -->
+<section class="collection-page">
+    <h2>Chains Collection</h2>
+    <div class="gallery" id="chainsGallery"></div>
+</section>
+
+<!-- AUTO IMAGE LOADER -->
+<script>
+const gallery = document.getElementById("chainsGallery");
+
+for (let i = 1; i <= 20; i++) {
+    gallery.innerHTML += `
+        <div class="product">
+            <img src="images/chains/chains${i}.jpeg" loading="lazy" alt="Gold Chain ${i}">
+            <a class="whatsapp-btn"
+               href="https://wa.me/919160724724?text=I%20am%20interested%20in%20chain%20${i}"
+               target="_blank">Enquire on WhatsApp</a>
+        </div>`;
+}
+</script>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>📞 Phone / WhatsApp: 9160724724</p>
+    <p>© 2026 Sri Sri Sri Vishwakarma Jewellery Works</p>
+</footer>
+
+</body>
+</html>

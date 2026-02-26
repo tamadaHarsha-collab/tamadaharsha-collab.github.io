@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Earrings Collection | Sri Sri Sri Vishwakarma Jewellery Works</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Jewellery Logo" class="logo">
+    <h1>SRI SRI SRI VISHWAKARMA JEWELLERY WORKS</h1>
+    <p>Traditional & Custom Jewellery Makers</p>
+</header>
+
+<section class="hero hero-earrings">
+    <div class="hero-text">
+        <h2>Earrings Collection</h2>
+        <p>Timeless elegance for every occasion</p>
+        <a href="#earringsGallery" class="hero-btn">Explore Collection</a>
+    </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Earrings Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <!-- your header code here -->
+
+    <!-- EARRINGS SECTION -->
+    <section class="collection-page earrings">
+        <h2>Earrings Collection</h2>
+        <div class="gallery" id="earringsGallery"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- your footer code here -->
+
+    <!-- ✅ PASTE JS HERE (JUST BEFORE </body>) -->
+    <script>
+        const gallery = document.getElementById("earringsGallery");
+
+        for (let i = 1; i <= 50; i++) {
+            gallery.innerHTML += `
+                <div class="product">
+                    <img 
+                        src="images/earrings/earrings${i}.jpeg" 
+                        alt="Gold Earrings ${i}" 
+                        loading="lazy"
+                    >
+                    <a class="whatsapp-btn"
+                       href="https://wa.me/919160724724?text=I%20am%20interested%20in%20earring%20${i}"
+                       target="_blank">
+                       Enquire on WhatsApp
+                    </a>
+                </div>
+            `;
+        }
+    </script>
+
+</body>
+</html>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>📞 Phone / WhatsApp: 9160724724</p>
+    <p>© 2026 Sri Sri Sri Vishwakarma Jewellery Works</p>
+</footer>
+
+</body>
+</html>
